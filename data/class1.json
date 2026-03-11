@@ -1,10 +1,4 @@
-{
-  "class": 1,
-  "subjects": [
-    {
-      "subject": "Math",
-      "total_questions": 120,
-      "questions": [
+[
         {
           "question_number": 1,
           "question": "What is 2 + 2?",
@@ -6666,6 +6660,3 @@
           "answer": "Rights all humans are entitled to regardless of nationality or background"
         }
       ]
-    }
-  ]
-}
