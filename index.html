@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QUIZMASTER-PRO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+  <div id="particles"></div>
+
+  <!-- HOME SCREEN -->
+  <div id="screen-home" class="screen active">
+    <div class="home-top">
+      <div class="logo-badge">🎓</div>
+      <h1 class="game-title">QUIZMASTER<span>PRO</span></h1>
+      <p class="game-tagline">Learn · Play · Conquer</p>
+      <div class="player-hud glass-card">
+        <div class="hud-avatar" id="hud-avatar">🧑‍🎓</div>
+        <div class="hud-info">
+          <div class="hud-name" id="hud-name">Guest</div>
+          <div class="hud-level">Level <span id="hud-level">1</span> · <span id="hud-xp">0</span> XP</div>
+          <div class="xp-bar-wrap"><div class="xp-bar-fill" id="xp-bar"></div></div>
+        </div>
+        <div class="hud-streak">🔥<span id="hud-streak">0</span></div>
+      </div>
+    </div>
+    <div class="home-btns">
+      <button class="btn-primary glow-btn" onclick="showScreen('screen-setup')">🚀 Start Game</button>
+      <button class="btn-secondary" onclick="showScreen('screen-leaderboard')">🏆 Leaderboard</button>
+      <button class="btn-secondary" onclick="showScreen('screen-achievements')">🎖️ Achievements</button>
+      <button class="btn-outline" onclick="showScreen('screen-profile')">👤 Profile</button>
+    </div>
+    <div class="daily-card glass-card" onclick="startDailyQuiz()">
+      <div class="daily-icon">📅</div>
+      <div>
+        <div class="daily-title">Daily Quiz</div>
+        <div class="daily-sub" id="daily-status">Tap to earn 50 XP bonus!</div>
+      </div>
+      <div class="daily-arrow">→</div>
+    </div>
+  </div>
+
+  <!-- SETUP SCREEN -->
+  <div id="screen-setup" class="screen">
+    <div class="screen-header">
+      <button class="btn-back" onclick="showScreen('screen-home')">← Back</button>
+      <h2 class="screen-title">Setup Your Quiz</h2>
+    </div>
+    <div class="setup-step glass-card" id="step-name">
+      <h3>👤 Your Name</h3>
+      <input type="text" id="player-name-input" class="name-input" placeholder="Enter your name…" maxlength="20" />
+    </div>
+    <div class="setup-step glass-card">
+      <h3>🏫 Select Class</h3>
+      <div class="class-grid" id="class-grid"></div>
+    </div>
+    <div class="setup-step glass-card">
+      <h3>📚 Select Subject</h3>
+      <div class="subject-grid" id="subject-grid"></div>
+    </div>
+    <div class="setup-step glass-card">
+      <h3>🎮 Game Mode</h3>
+      <div class="mode-grid" id="mode-grid"></div>
+    </div>
+    <button class="btn-primary glow-btn full-btn" onclick="startGame()">▶ Play Now!</button>
+  </div>
+
+  <!-- QUIZ SCREEN -->
+  <div id="screen-quiz" class="screen">
+    <div class="quiz-header">
+      <button class="btn-back-sm" onclick="exitQuiz()">✕</button>
+      <div class="quiz-meta">
+        <span class="quiz-badge" id="q-class-badge"></span>
+        <span class="quiz-badge accent" id="q-subject-badge"></span>
+        <span class="quiz-badge gold" id="q-mode-badge"></span>
+      </div>
+      <div class="quiz-score-display">⭐ <span id="live-score">0</span></div>
+    </div>
+    <div class="timer-row" id="timer-row">
+      <div class="timer-bar-wrap"><div class="timer-bar" id="timer-bar"></div></div>
+      <div class="timer-num" id="timer-num">30</div>
+    </div>
+    <div class="question-progress">
+      <span id="q-current">1</span> / <span id="q-total">10</span>
+      <div class="progress-dots" id="progress-dots"></div>
+    </div>
+    <div class="question-card glass-card" id="question-card">
+      <div class="question-icon" id="question-icon">❓</div>
+      <p class="question-text" id="question-text">Loading question…</p>
+    </div>
+    <div class="options-grid" id="options-grid"></div>
+    <div class="quiz-footer">
+      <div class="streak-display">🔥 Streak: <span id="quiz-streak">0</span></div>
+      <button class="btn-skip" onclick="skipQuestion()" id="skip-btn">Skip →</button>
+    </div>
+  </div>
+
+  <!-- RESULT SCREEN -->
+  <div id="screen-result" class="screen">
+    <div id="confetti-wrap"></div>
+    <div class="result-card glass-card">
+      <div class="result-emoji" id="result-emoji">🎉</div>
+      <h2 class="result-title" id="result-title">Quiz Complete!</h2>
+      <div class="result-name" id="result-name"></div>
+      <div class="result-stats">
+        <div class="stat-box"><div class="stat-val" id="r-score">0</div><div class="stat-lbl">Score</div></div>
+        <div class="stat-box"><div class="stat-val" id="r-correct">0</div><div class="stat-lbl">Correct</div></div>
+        <div class="stat-box"><div class="stat-val" id="r-wrong">0</div><div class="stat-lbl">Wrong</div></div>
+        <div class="stat-box"><div class="stat-val" id="r-time">0s</div><div class="stat-lbl">Avg Time</div></div>
+      </div>
+      <div class="result-xp glass-card" id="result-xp">+0 XP Earned!</div>
+      <div class="result-btns">
+        <button class="btn-primary glow-btn" onclick="playAgain()">🔄 Play Again</button>
+        <button class="btn-secondary" onclick="showScreen('screen-home')">🏠 Home</button>
+        <button class="btn-outline" onclick="showScreen('screen-leaderboard')">🏆 Leaderboard</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEVEL MODE SCREEN -->
+  <div id="screen-levels" class="screen">
+    <div class="screen-header">
+      <button class="btn-back" onclick="showScreen('screen-home')">← Back</button>
+      <h2 class="screen-title">Level Mode</h2>
+    </div>
+    <div class="levels-grid" id="levels-grid"></div>
+  </div>
+
+  <!-- LEADERBOARD SCREEN -->
+  <div id="screen-leaderboard" class="screen">
+    <div class="screen-header">
+      <button class="btn-back" onclick="showScreen('screen-home')">← Back</button>
+      <h2 class="screen-title">🏆 Leaderboard</h2>
+    </div>
+    <div class="lb-filters">
+      <button class="lb-filter active" onclick="filterLB('all',this)">All Time</button>
+      <button class="lb-filter" onclick="filterLB('daily',this)">Today</button>
+    </div>
+    <div class="lb-list" id="lb-list"></div>
+  </div>
+
+  <!-- ACHIEVEMENTS SCREEN -->
+  <div id="screen-achievements" class="screen">
+    <div class="screen-header">
+      <button class="btn-back" onclick="showScreen('screen-home')">← Back</button>
+      <h2 class="screen-title">🎖️ Achievements</h2>
+    </div>
+    <div class="ach-grid" id="ach-grid"></div>
+  </div>
+
+  <!-- PROFILE SCREEN -->
+  <div id="screen-profile" class="screen">
+    <div class="screen-header">
+      <button class="btn-back" onclick="showScreen('screen-home')">← Back</button>
+      <h2 class="screen-title">👤 Profile</h2>
+    </div>
+    <div class="profile-card glass-card">
+      <div class="profile-avatar" id="profile-avatar">🧑‍🎓</div>
+      <div class="profile-name" id="profile-name-display">Player</div>
+      <div class="profile-level">Level <span id="p-level">1</span></div>
+      <div class="xp-bar-wrap wide"><div class="xp-bar-fill" id="p-xp-bar"></div></div>
+      <div class="xp-label"><span id="p-xp">0</span> / <span id="p-xp-next">100</span> XP</div>
+      <div class="profile-stats-grid">
+        <div class="ps-box"><div class="ps-val" id="ps-total">0</div><div class="ps-lbl">Games</div></div>
+        <div class="ps-box"><div class="ps-val" id="ps-correct">0</div><div class="ps-lbl">Correct</div></div>
+        <div class="ps-box"><div class="ps-val" id="ps-streak">0</div><div class="ps-lbl">Best Streak</div></div>
+        <div class="ps-box"><div class="ps-val" id="ps-badges">0</div><div class="ps-lbl">Badges</div></div>
+      </div>
+      <div class="avatar-picker">
+        <p>Choose Avatar</p>
+        <div class="avatar-options" id="avatar-options"></div>
+      </div>
+      <button class="btn-danger" onclick="resetData()">🗑️ Reset Progress</button>
+    </div>
+  </div>
+
+  <!-- ACHIEVEMENT POPUP -->
+  <div id="ach-popup" class="ach-popup hidden">
+    <div class="ach-popup-inner glass-card">
+      <div class="ach-popup-badge" id="ach-popup-badge">🏅</div>
+      <div class="ach-popup-title">Achievement Unlocked!</div>
+      <div class="ach-popup-name" id="ach-popup-name"></div>
+    </div>
+  </div>
+
+  <!-- ANSWER FEEDBACK -->
+  <div id="feedback-overlay" class="feedback-overlay hidden">
+    <div class="feedback-inner" id="feedback-inner"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
