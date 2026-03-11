@@ -1,0 +1,734 @@
+[
+        {
+          "question_number": 1,
+          "question": "What is 2 + 2?",
+          "answer": "4"
+        },
+        {
+          "question_number": 2,
+          "question": "What is 5 - 3?",
+          "answer": "2"
+        },
+        {
+          "question_number": 3,
+          "question": "What is 3 × 2?",
+          "answer": "6"
+        },
+        {
+          "question_number": 4,
+          "question": "How many sides does a triangle have?",
+          "answer": "3"
+        },
+        {
+          "question_number": 5,
+          "question": "What is 10 ÷ 2?",
+          "answer": "5"
+        },
+        {
+          "question_number": 6,
+          "question": "What comes after 9?",
+          "answer": "10"
+        },
+        {
+          "question_number": 7,
+          "question": "What is 1 + 1?",
+          "answer": "2"
+        },
+        {
+          "question_number": 8,
+          "question": "What is 4 + 3?",
+          "answer": "7"
+        },
+        {
+          "question_number": 9,
+          "question": "What is 8 - 5?",
+          "answer": "3"
+        },
+        {
+          "question_number": 10,
+          "question": "How many sides does a square have?",
+          "answer": "4"
+        },
+        {
+          "question_number": 11,
+          "question": "What is 12 + 15?",
+          "answer": "27"
+        },
+        {
+          "question_number": 12,
+          "question": "What is 20 - 8?",
+          "answer": "12"
+        },
+        {
+          "question_number": 13,
+          "question": "What is 5 × 4?",
+          "answer": "20"
+        },
+        {
+          "question_number": 14,
+          "question": "What is 36 ÷ 6?",
+          "answer": "6"
+        },
+        {
+          "question_number": 15,
+          "question": "What is the place value of 5 in 57?",
+          "answer": "Tens"
+        },
+        {
+          "question_number": 16,
+          "question": "What is 100 - 45?",
+          "answer": "55"
+        },
+        {
+          "question_number": 17,
+          "question": "How many minutes in an hour?",
+          "answer": "60"
+        },
+        {
+          "question_number": 18,
+          "question": "What is 7 × 8?",
+          "answer": "56"
+        },
+        {
+          "question_number": 19,
+          "question": "What is half of 40?",
+          "answer": "20"
+        },
+        {
+          "question_number": 20,
+          "question": "What is the perimeter of a square with side 4 cm?",
+          "answer": "16 cm"
+        },
+        {
+          "question_number": 21,
+          "question": "What is the LCM of 4 and 6?",
+          "answer": "12"
+        },
+        {
+          "question_number": 22,
+          "question": "What is the HCF of 12 and 18?",
+          "answer": "6"
+        },
+        {
+          "question_number": 23,
+          "question": "What is 25% of 200?",
+          "answer": "50"
+        },
+        {
+          "question_number": 24,
+          "question": "Convert 1/2 to decimal.",
+          "answer": "0.5"
+        },
+        {
+          "question_number": 25,
+          "question": "What is the area of a rectangle 5×3?",
+          "answer": "15 sq units"
+        },
+        {
+          "question_number": 26,
+          "question": "What is 2³?",
+          "answer": "8"
+        },
+        {
+          "question_number": 27,
+          "question": "What is √64?",
+          "answer": "8"
+        },
+        {
+          "question_number": 28,
+          "question": "Simplify 3/6.",
+          "answer": "1/2"
+        },
+        {
+          "question_number": 29,
+          "question": "What is 15% of 100?",
+          "answer": "15"
+        },
+        {
+          "question_number": 30,
+          "question": "What is 0.5 + 0.25?",
+          "answer": "0.75"
+        },
+        {
+          "question_number": 31,
+          "question": "Solve: 2x + 3 = 7",
+          "answer": "x = 2"
+        },
+        {
+          "question_number": 32,
+          "question": "What is the sum of angles in a triangle?",
+          "answer": "180°"
+        },
+        {
+          "question_number": 33,
+          "question": "What is the area of a circle with radius 7? (π=22/7)",
+          "answer": "154 sq units"
+        },
+        {
+          "question_number": 34,
+          "question": "What is (-5) + (-3)?",
+          "answer": "-8"
+        },
+        {
+          "question_number": 35,
+          "question": "What is 12²?",
+          "answer": "144"
+        },
+        {
+          "question_number": 36,
+          "question": "Find simple interest: P=1000, R=5%, T=2 years",
+          "answer": "₹100"
+        },
+        {
+          "question_number": 37,
+          "question": "What is the ratio 4:8 in simplest form?",
+          "answer": "1:2"
+        },
+        {
+          "question_number": 38,
+          "question": "What is the volume of cube with side 3?",
+          "answer": "27 cubic units"
+        },
+        {
+          "question_number": 39,
+          "question": "Solve: 3x - 6 = 9",
+          "answer": "x = 5"
+        },
+        {
+          "question_number": 40,
+          "question": "What is 20% of 500?",
+          "answer": "100"
+        },
+        {
+          "question_number": 41,
+          "question": "State Pythagoras theorem.",
+          "answer": "a² + b² = c²"
+        },
+        {
+          "question_number": 42,
+          "question": "What is the discriminant of ax²+bx+c=0?",
+          "answer": "b²-4ac"
+        },
+        {
+          "question_number": 43,
+          "question": "What is sin 30°?",
+          "answer": "1/2"
+        },
+        {
+          "question_number": 44,
+          "question": "What is cos 0°?",
+          "answer": "1"
+        },
+        {
+          "question_number": 45,
+          "question": "Area of a triangle with base 10 and height 6?",
+          "answer": "30 sq units"
+        },
+        {
+          "question_number": 46,
+          "question": "What is the slope of y = 3x + 5?",
+          "answer": "3"
+        },
+        {
+          "question_number": 47,
+          "question": "Expand (a+b)².",
+          "answer": "a² + 2ab + b²"
+        },
+        {
+          "question_number": 48,
+          "question": "What is π approximately equal to?",
+          "answer": "3.14159"
+        },
+        {
+          "question_number": 49,
+          "question": "Find median of 3,5,7,9,11.",
+          "answer": "7"
+        },
+        {
+          "question_number": 50,
+          "question": "What is the probability of getting heads in a coin toss?",
+          "answer": "1/2"
+        },
+        {
+          "question_number": 51,
+          "question": "What is derivative of x²?",
+          "answer": "2x"
+        },
+        {
+          "question_number": 52,
+          "question": "Integrate x dx.",
+          "answer": "x²/2 + C"
+        },
+        {
+          "question_number": 53,
+          "question": "What is limit of (sin x / x) as x→0?",
+          "answer": "1"
+        },
+        {
+          "question_number": 54,
+          "question": "State De Morgan's law.",
+          "answer": "¬(A∪B) = ¬A∩¬B"
+        },
+        {
+          "question_number": 55,
+          "question": "What is the arithmetic mean formula?",
+          "answer": "Sum of terms / Number of terms"
+        },
+        {
+          "question_number": 56,
+          "question": "What is the formula for compound interest?",
+          "answer": "A = P(1 + r/n)^(nt)"
+        },
+        {
+          "question_number": 57,
+          "question": "What are the roots of x²-5x+6=0?",
+          "answer": "2 and 3"
+        },
+        {
+          "question_number": 58,
+          "question": "What is cot θ equal to?",
+          "answer": "cos θ / sin θ"
+        },
+        {
+          "question_number": 59,
+          "question": "What is the eccentricity of a circle?",
+          "answer": "0"
+        },
+        {
+          "question_number": 60,
+          "question": "Define a matrix.",
+          "answer": "A rectangular array of numbers"
+        },
+        {
+          "question_number": 61,
+          "question": "What is 2 + 2?",
+          "answer": "4"
+        },
+        {
+          "question_number": 62,
+          "question": "What is 5 - 3?",
+          "answer": "2"
+        },
+        {
+          "question_number": 63,
+          "question": "What is 3 × 2?",
+          "answer": "6"
+        },
+        {
+          "question_number": 64,
+          "question": "How many sides does a triangle have?",
+          "answer": "3"
+        },
+        {
+          "question_number": 65,
+          "question": "What is 10 ÷ 2?",
+          "answer": "5"
+        },
+        {
+          "question_number": 66,
+          "question": "What comes after 9?",
+          "answer": "10"
+        },
+        {
+          "question_number": 67,
+          "question": "What is 1 + 1?",
+          "answer": "2"
+        },
+        {
+          "question_number": 68,
+          "question": "What is 4 + 3?",
+          "answer": "7"
+        },
+        {
+          "question_number": 69,
+          "question": "What is 8 - 5?",
+          "answer": "3"
+        },
+        {
+          "question_number": 70,
+          "question": "How many sides does a square have?",
+          "answer": "4"
+        },
+        {
+          "question_number": 71,
+          "question": "What is 12 + 15?",
+          "answer": "27"
+        },
+        {
+          "question_number": 72,
+          "question": "What is 20 - 8?",
+          "answer": "12"
+        },
+        {
+          "question_number": 73,
+          "question": "What is 5 × 4?",
+          "answer": "20"
+        },
+        {
+          "question_number": 74,
+          "question": "What is 36 ÷ 6?",
+          "answer": "6"
+        },
+        {
+          "question_number": 75,
+          "question": "What is the place value of 5 in 57?",
+          "answer": "Tens"
+        },
+        {
+          "question_number": 76,
+          "question": "What is 100 - 45?",
+          "answer": "55"
+        },
+        {
+          "question_number": 77,
+          "question": "How many minutes in an hour?",
+          "answer": "60"
+        },
+        {
+          "question_number": 78,
+          "question": "What is 7 × 8?",
+          "answer": "56"
+        },
+        {
+          "question_number": 79,
+          "question": "What is half of 40?",
+          "answer": "20"
+        },
+        {
+          "question_number": 80,
+          "question": "What is the perimeter of a square with side 4 cm?",
+          "answer": "16 cm"
+        },
+        {
+          "question_number": 81,
+          "question": "What is the LCM of 4 and 6?",
+          "answer": "12"
+        },
+        {
+          "question_number": 82,
+          "question": "What is the HCF of 12 and 18?",
+          "answer": "6"
+        },
+        {
+          "question_number": 83,
+          "question": "What is 25% of 200?",
+          "answer": "50"
+        },
+        {
+          "question_number": 84,
+          "question": "Convert 1/2 to decimal.",
+          "answer": "0.5"
+        },
+        {
+          "question_number": 85,
+          "question": "What is the area of a rectangle 5×3?",
+          "answer": "15 sq units"
+        },
+        {
+          "question_number": 86,
+          "question": "What is 2³?",
+          "answer": "8"
+        },
+        {
+          "question_number": 87,
+          "question": "What is √64?",
+          "answer": "8"
+        },
+        {
+          "question_number": 88,
+          "question": "Simplify 3/6.",
+          "answer": "1/2"
+        },
+        {
+          "question_number": 89,
+          "question": "What is 15% of 100?",
+          "answer": "15"
+        },
+        {
+          "question_number": 90,
+          "question": "What is 0.5 + 0.25?",
+          "answer": "0.75"
+        },
+        {
+          "question_number": 91,
+          "question": "Solve: 2x + 3 = 7",
+          "answer": "x = 2"
+        },
+        {
+          "question_number": 92,
+          "question": "What is the sum of angles in a triangle?",
+          "answer": "180°"
+        },
+        {
+          "question_number": 93,
+          "question": "What is the area of a circle with radius 7? (π=22/7)",
+          "answer": "154 sq units"
+        },
+        {
+          "question_number": 94,
+          "question": "What is (-5) + (-3)?",
+          "answer": "-8"
+        },
+        {
+          "question_number": 95,
+          "question": "What is 12²?",
+          "answer": "144"
+        },
+        {
+          "question_number": 96,
+          "question": "Find simple interest: P=1000, R=5%, T=2 years",
+          "answer": "₹100"
+        },
+        {
+          "question_number": 97,
+          "question": "What is the ratio 4:8 in simplest form?",
+          "answer": "1:2"
+        },
+        {
+          "question_number": 98,
+          "question": "What is the volume of cube with side 3?",
+          "answer": "27 cubic units"
+        },
+        {
+          "question_number": 99,
+          "question": "Solve: 3x - 6 = 9",
+          "answer": "x = 5"
+        },
+        {
+          "question_number": 100,
+          "question": "What is 20% of 500?",
+          "answer": "100"
+        },
+        {
+          "question_number": 101,
+          "question": "State Pythagoras theorem.",
+          "answer": "a² + b² = c²"
+        },
+        {
+          "question_number": 102,
+          "question": "What is the discriminant of ax²+bx+c=0?",
+          "answer": "b²-4ac"
+        },
+        {
+          "question_number": 103,
+          "question": "What is sin 30°?",
+          "answer": "1/2"
+        },
+        {
+          "question_number": 104,
+          "question": "What is cos 0°?",
+          "answer": "1"
+        },
+        {
+          "question_number": 105,
+          "question": "Area of a triangle with base 10 and height 6?",
+          "answer": "30 sq units"
+        },
+        {
+          "question_number": 106,
+          "question": "What is the slope of y = 3x + 5?",
+          "answer": "3"
+        },
+        {
+          "question_number": 107,
+          "question": "Expand (a+b)².",
+          "answer": "a² + 2ab + b²"
+        },
+        {
+          "question_number": 108,
+          "question": "What is π approximately equal to?",
+          "answer": "3.14159"
+        },
+        {
+          "question_number": 109,
+          "question": "Find median of 3,5,7,9,11.",
+          "answer": "7"
+        },
+        {
+          "question_number": 110,
+          "question": "What is the probability of getting heads in a coin toss?",
+          "answer": "1/2"
+        },
+        {
+          "question_number": 111,
+          "question": "What is derivative of x²?",
+          "answer": "2x"
+        },
+        {
+          "question_number": 112,
+          "question": "Integrate x dx.",
+          "answer": "x²/2 + C"
+        },
+        {
+          "question_number": 113,
+          "question": "What is limit of (sin x / x) as x→0?",
+          "answer": "1"
+        },
+        {
+          "question_number": 114,
+          "question": "State De Morgan's law.",
+          "answer": "¬(A∪B) = ¬A∩¬B"
+        },
+        {
+          "question_number": 115,
+          "question": "What is the arithmetic mean formula?",
+          "answer": "Sum of terms / Number of terms"
+        },
+        {
+          "question_number": 116,
+          "question": "What is the formula for compound interest?",
+          "answer": "A = P(1 + r/n)^(nt)"
+        },
+        {
+          "question_number": 117,
+          "question": "What are the roots of x²-5x+6=0?",
+          "answer": "2 and 3"
+        },
+        {
+          "question_number": 118,
+          "question": "What is cot θ equal to?",
+          "answer": "cos θ / sin θ"
+        },
+        {
+          "question_number": 119,
+          "question": "What is the eccentricity of a circle?",
+          "answer": "0"
+        },
+        {
+          "question_number": 120,
+          "question": "Define a matrix.",
+          "answer": "A rectangular array of numbers"
+        }
+      ]
+    },
+    {
+      "subject": "Science",
+      "total_questions": 120,
+      "questions": [
+        {
+          "question_number": 1,
+          "question": "What is the chemical formula of water?",
+          "answer": "H₂O"
+        },
+        {
+          "question_number": 2,
+          "question": "Which planet is closest to the Sun?",
+          "answer": "Mercury"
+        },
+        {
+          "question_number": 3,
+          "question": "What gas do plants absorb for photosynthesis?",
+          "answer": "Carbon Dioxide (CO₂)"
+        },
+        {
+          "question_number": 4,
+          "question": "How many bones are in the adult human body?",
+          "answer": "206"
+        },
+        {
+          "question_number": 5,
+          "question": "What is the speed of light?",
+          "answer": "3 × 10⁸ m/s"
+        },
+        {
+          "question_number": 6,
+          "question": "What is the unit of electric current?",
+          "answer": "Ampere"
+        },
+        {
+          "question_number": 7,
+          "question": "Who invented the telephone?",
+          "answer": "Alexander Graham Bell"
+        },
+        {
+          "question_number": 8,
+          "question": "What is the chemical symbol for gold?",
+          "answer": "Au"
+        },
+        {
+          "question_number": 9,
+          "question": "What is Newton's first law of motion?",
+          "answer": "An object remains at rest or in uniform motion unless acted upon by a force"
+        },
+        {
+          "question_number": 10,
+          "question": "What is photosynthesis?",
+          "answer": "The process by which plants make food using sunlight, water, and CO₂"
+        },
+        {
+          "question_number": 11,
+          "question": "What is the powerhouse of the cell?",
+          "answer": "Mitochondria"
+        },
+        {
+          "question_number": 12,
+          "question": "What is the boiling point of water?",
+          "answer": "100°C"
+        },
+        {
+          "question_number": 13,
+          "question": "What is the freezing point of water?",
+          "answer": "0°C"
+        },
+        {
+          "question_number": 14,
+          "question": "Which gas is most abundant in Earth's atmosphere?",
+          "answer": "Nitrogen (78%)"
+        },
+        {
+          "question_number": 15,
+          "question": "What is the chemical formula of common salt?",
+          "answer": "NaCl"
+        },
+        {
+          "question_number": 16,
+          "question": "Who proposed the theory of evolution?",
+          "answer": "Charles Darwin"
+        },
+        {
+          "question_number": 17,
+          "question": "What is the SI unit of force?",
+          "answer": "Newton"
+        },
+        {
+          "question_number": 18,
+          "question": "What is the nucleus of an atom made of?",
+          "answer": "Protons and Neutrons"
+        },
+        {
+          "question_number": 19,
+          "question": "What is an ecosystem?",
+          "answer": "A community of living organisms interacting with their environment"
+        },
+        {
+          "question_number": 20,
+          "question": "What is the chemical symbol for oxygen?",
+          "answer": "O"
+        },
+        {
+          "question_number": 21,
+          "question": "What is DNA?",
+          "answer": "Deoxyribonucleic acid – the genetic material of living organisms"
+        },
+        {
+          "question_number": 22,
+          "question": "How many chambers does the human heart have?",
+          "answer": "4"
+        },
+        {
+          "question_number": 23,
+          "question": "What is the largest organ of the human body?",
+          "answer": "Skin"
+        },
+        {
+          "question_number": 24,
+          "question": "What is the pH of pure water?",
+          "answer": "7"
+        },
+        {
+          "question_number": 25,
+          "question": "What is an acid?",
+          "answer": "A substance with pH less than 7"
+        },
+        {
+          "question
